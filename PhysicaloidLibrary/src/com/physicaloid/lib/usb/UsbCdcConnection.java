@@ -88,6 +88,7 @@ public class UsbCdcConnection {
                                         if(DEBUG_SHOW){ Log.d(TAG, "Find VID:"+Integer.toHexString(usbdev.getVendorId())+", PID:"+Integer.toHexString(usbdev.getProductId())+", DevNum:"+devNum+", IntfNum:"+intfNum); }
                                         mUsbConnectionEp.put(ch,new UsbCdcConnectionEp(mUsbAccess.connection(ch), getEndpoint(devNum, intfNum, UsbConstants.USB_DIR_IN), getEndpoint(devNum, intfNum, UsbConstants.USB_DIR_OUT)));
                                         mCdcAcmInterfaceNum = intfNum;
+                                        mCdcAcmInterfaceNum = 0; // To be fixed. Ajmal.
                                         return true;
                                     }
                                 }
