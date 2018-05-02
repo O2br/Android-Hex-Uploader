@@ -1,4 +1,4 @@
-Physicaloid Library
+Android-Hex-Uploader Library
 ==================
 
 Android Library for communicating with physical-computing boards (e.g.Arduino, mbed)
